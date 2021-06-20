@@ -1,0 +1,39 @@
+Test Case 1 -> In the tipCalculator, the value of bill should be always in positive.
+
+Test Case 2 -> In the tipCalculator, the value of tip% should be always in positive.
+
+Test Case 3 -> the value of number of peoples always positive.
+
+Test Case 4 -> the value of People is not in fraction.
+
+Test Case 5 -> The tip per person should be less than bill.
+
+Test Case 6 -> the total per person should be equal or less than bill.
+
+Test Case 7 -> The value of tip% should be only 100%.
+
+Test Case 8 -> The number of people can be equal or less than th bill.
+
+Test Case 9 -> We always assume that the tip per person
+
+Test Case 10 -> the "+" button should increase the values.
+
+Test Case 11 -> the "-" button should decrease the values
+
+Test Case 12 -> In the number of people field, "+" button should increase the value by 1 not to 0 because at least 1 person is being served.
+
+Test Case 13 -> In the number of People field, "-" button should decrease the value by 1.
+
+Test Case 14 -> In the tip % field the value should be in %.
+
+Test Case 15 -> The value in the tip % field is only in number not in alphabet.
+
+Test Case 16 -> the value of the bill field is only number
+
+Test Case 17 -> the value of number of people is only number.
+
+Test Case 18 -> the value should be changed automatically if we change the value of tip%.
+
+Test Case 19 -> the value should be changed automatically if we change the value of number of people field.
+
+Test Case 20 -> The UI should be intractive or attractive.
