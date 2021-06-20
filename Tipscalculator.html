@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tip Calculator</title>
+    
+</head>
+
+<body>
+    <div class="card mb-3 mx-auto mt-lg-5 shadow-sm" style="max-width: 1080px;">
+        <div class="row g-0">
+            <div class="col-md-5 border-right">
+                <!-- inner-left card -->
+                <div class="">
+                    <div class="card-body">
+                        <!-- card body start -->
+                        <label for="Bill">Bill</label>
+                        <div class="input-group mb-3">
+                            <!--<span class="input-group-text">$</span>-->
+                            <input type="number" class="form-control"
+                                aria-label="Dollar amount (with dot and two decimal places)" id="totalbill" value="0">
+                            
+                        </div>
+                        <label for="tip%">Tip %</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="minus_tip" onclick="btnController(tip,'decrease')"><i class="fas fa-minus"></i></span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="tip" value="0%" min="0">
+                            <span class="input-group-text" id="plus_tip" onclick="btnController(tip,'increase')"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <label for="number_people">Number of People</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="minus_people" onclick="btnController(people,'decrease')"><i class="fas fa-minus"></i></span>
+                            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="people" value="1" min='1' >
+                            <span class="input-group-text" id="plus_people" onclick="btnController(people,'increase')"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <!-- card body end -->
+                    </div>
+                </div>
+                <!-- inner-left card close -->
+            </div>
+            <!-- inner right card start -->
+            <div class="col-md-7">
+                <div class="card-body">
+                <!-- card body start -->
+                <table class="table my-5">
+                    <tbody>
+                        <tr>
+                            
+                            <td>
+                                <h3>Tip</h3>
+                                <p>per person</p>
+                            </td>
+                            <td>
+                                <h2 id="Tipresult">$0</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>
+                                <h3>Total</h3>
+                                <p>per person</p>
+                            </td>
+                            <td>
+                                <h1 class="fw-bolder" id="Peopleresult">$0</h1>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- card body end -->
+                </div>
+            </div>
+            <!-- inner-right card close -->
+        </div>
+    </div>
+    <script src="Tipscalculator.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
